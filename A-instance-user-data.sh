@@ -26,10 +26,10 @@ cat <<EOF > /var/www/html/index.html
 <html>
 EOF
 
-mkdir -p /var/www/html/b/
+mkdir -p /var/www/html/a/
 
 # Setting the app index.html file.
-cat <<EOF > /var/www/html/b/index.html
+cat <<EOF > /var/www/html/a/index.html
 <html>
     <style>
     
