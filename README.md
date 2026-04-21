@@ -83,6 +83,8 @@ We launch 1 EC2 instance:
 
 Subnet: Private Subnet C
 
+Public IP: Disabled
+
 
 Security Group: App B SG
 
