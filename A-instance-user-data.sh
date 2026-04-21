@@ -52,11 +52,11 @@ cat <<EOF > /var/www/html/b/index.html
 EOF
 
 # Creating simple index.html file for HTTPD base page  
-echo '<html><h1>Hello! <strong>I am hosting application B!</strong></h1><h2>I live in this Availability Zone: ' >> /var/www/html/b/index.html 
-curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/placement/availability-zone >> /var/www/html/b/index.html
-echo '</h2> <h2>I go by this Instance Id: ' >> /var/www/html/b/index.html
-curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/instance-id >> /var/www/html/b/index.html  
-echo '</2></html> ' >> /var/www/html/b/index.html
+echo '<html><h1>Hello! <strong>I am hosting application A!</strong></h1><h2>I live in this Availability Zone: ' >> /var/www/html/a/index.html 
+curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/placement/availability-zone >> /var/www/html/a/index.html
+echo '</h2> <h2>I go by this Instance Id: ' >> /var/www/html/a/index.html
+curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/instance-id >> /var/www/html/a/index.html  
+echo '</2></html> ' >> /var/www/html/a/index.html
 
 # Restarting HTTPD service to enforce new index.html just to be safe.  
 systemctl restart httpd.service
