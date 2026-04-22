@@ -21,7 +21,7 @@ cat <<EOF > /var/www/html/index.html
 <html>
     <title>DigitalCulture Prep</title>
     <body>
-        <p>Our default homepage</p>
+        <p>Success instance A</p>
     </body>
 <html>
 EOF
