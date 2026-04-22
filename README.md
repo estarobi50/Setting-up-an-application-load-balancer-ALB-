@@ -73,9 +73,8 @@ Public IP: Disabled
 
 Security Group: App A SG
 
-
-User Data (Apache setup + path /a)
-#!/bin/bashyum update -yyum install -y httpdsystemctl start httpdsystemctl enable httpdecho "Hello from Application A" > /var/www/html/index.htmlmkdir /var/www/html/aecho "Application A Path" > /var/www/html/a/index.html
+Use user data
+A-instance-user-data.sh
 
 Application B
 We launch 1 EC2 instance:
@@ -88,9 +87,8 @@ Public IP: Disabled
 
 Security Group: App B SG
 
-
-User Data (Apache setup + path /b)
-#!/bin/bashyum update -yyum install -y httpdsystemctl start httpdsystemctl enable httpdecho "Hello from Application B" > /var/www/html/index.htmlmkdir /var/www/html/becho "Application B Path" > /var/www/html/b/index.html
+Use user data
+B-instance-user-data.sh
 
 3. CREATE TARGET GROUPS
 
