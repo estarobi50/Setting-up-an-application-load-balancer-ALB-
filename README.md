@@ -187,7 +187,7 @@ Whoops, looks like you hit a dead end, this is not a valid page (503)
 Rule A
 
 
-Condition: Path = /a
+Condition: Path = /a/*
 
 
 Action: Forward to Target Group A
@@ -200,7 +200,7 @@ Priority: 1
 Rule B
 
 
-Condition: Path = /b
+Condition: Path = /b/*
 
 
 Action: Forward to Target Group B
