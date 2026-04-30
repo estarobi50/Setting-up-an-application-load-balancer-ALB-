@@ -1,6 +1,6 @@
 # AWS Application Load Balancer (ALB) Path-Based Routing 
 
-Demo – digitalculture---## OVERVIEWThis project demonstrates the setup of an **AWS Application Load Balancer (ALB)** with **path-based routing** to distribute traffic across multiple backend EC2 instances.The architecture includes multiple EC2 instances, separate target groups, and an ALB configured with HTTP (port 80) to route traffic based on URL paths. The goal is to validate that requests to different paths are correctly forwarded to the appropriate backend applications.We will build:- EC2 instances for two applications (A and B)- Target groups for each application- An internet-facing Application Load Balancer- Path-based routing rules 
+Demo – digitalculture---## OVERVIEW----This project demonstrates the setup of an **AWS Application Load Balancer (ALB)** with **path-based routing** to distribute traffic across multiple backend EC2 instances.The architecture includes multiple EC2 instances, separate target groups, and an ALB configured with HTTP (port 80) to route traffic based on URL paths. The goal is to validate that requests to different paths are correctly forwarded to the appropriate backend applications.We will build:- EC2 instances for two applications (A and B)- Target groups for each application- An internet-facing Application Load Balancer- Path-based routing rules 
 
 Routing Table
 PathTargetBehavior/aTarget Group ARoutes to Application A (load balanced across instances)/bTarget Group BRoutes to Application BDefaultFixed ResponseReturns HTTP 503 error
